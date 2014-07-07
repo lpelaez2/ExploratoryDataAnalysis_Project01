@@ -1,2 +1,2 @@
-ExploratoryDataAnalysis_Project01
-=================================
+Exploratory Data Analysis (Project01)
+=====================================
