@@ -52,13 +52,14 @@ selectedData <- as.numeric( rbind( subset(completeData, Date=="1/2/2007"),
                     
 
 # Draw required histogram and save as PNG
+par(mfrow = c(1,1))
+
 hist( selectedData, 
       col  = "red", 
       main = "Global Active Power", 
       xlab = "Global Active Power (kilowatts)"
     )
 
-dev.copy( png,
-          file ="./plot1.png")
+dev.copy( png, file ="./plot1.png", width = 480, height = 480)
 dev.off()
 
